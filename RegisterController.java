@@ -97,32 +97,6 @@ public class RegisterController {
                 ex.printStackTrace();
             }
             databaseUtility.close();
-            /*Connection connection=null;
-            Statement statement=null;
-            try {
-                Class.forName(JDBC_DRIVER);
-                connection = DriverManager.getConnection(DB_URL,
-                        USER,
-                        PASSWORD);
-                statement = connection.createStatement();
-                if(!statement.executeQuery(userNameSearch).next()){
-                    statement.executeUpdate(addNewUser);
-                } else {
-                    registerFlagSuggestion.setText("An error occured.\n"
-                            +"Maybe another user name?");
-                    return;
-                }
-            } catch (ClassNotFoundException | SQLException e) {
-                e.printStackTrace();
-            } finally {
-                try{
-                    if(statement!=null){
-                        statement.close();
-                    }
-                } catch (SQLException | NullPointerException ex) {
-                    ex.printStackTrace();
-                }
-            }*/
             registerFlagSuggestion.setText("Successfully registered!\n"
                     +"You are now a \'Visitor\'!");
         } else {

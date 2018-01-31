@@ -10,13 +10,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
-
-import static mainentry.MySqlDatabaseConstants.*;
 
 /**
  * @author  Seeker
